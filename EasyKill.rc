@@ -1,0 +1,250 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_APP
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(__INC_EKS__)
+#if defined(APSTUDIO_INVOKED)
+IDR_EKSURROGATEX86$(__INC_EKS__) RT_APP                  "EKSurrogate_x86.exe"
+#else
+IDR_EKSURROGATEX86      RT_APP                  "EKSurrogate_x86.exe"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLGABOUT DIALOGEX 0, 0, 202, 101
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "#"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDC_BTNOK,155,81,40,14
+    PUSHBUTTON      "&Send e-mail",IDC_BTNSE,7,81,50,14
+    ICON            IDI_MAINICON,IDC_STCICON,10,10,20,20
+    LTEXT           "#",IDC_STCNAME,45,10,150,10,0,WS_EX_TRANSPARENT
+    LTEXT           "#",IDC_STCCOP,45,25,150,20,0,WS_EX_TRANSPARENT
+    LTEXT           "Thanks for using this free program!",IDC_STCCOM,45,55,150,10,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_STCSEP,"Static",SS_BLACKFRAME,7,75,188,1,WS_EX_STATICEDGE
+END
+
+IDD_DLGOPTIONS DIALOGEX 0, 0, 262, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "%s"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDC_BTNOK,161,197,46,14
+    PUSHBUTTON      "&Cancel",IDC_BTNCANCEL,211,197,46,14
+    CONTROL         "Options",IDC_TABOPT,"SysTabControl32",WS_TABSTOP,5,5,252,187
+END
+
+IDD_DLGPAGEGENERAL DIALOGEX 0, 0, 246, 170
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Windows",IDC_STCWNDS,6,6,234,54
+    LTEXT           "Target to kill:",IDC_STCTGT,13,20,48,10,NOT WS_GROUP,WS_EX_TRANSPARENT
+    CONTROL         "&Active window",IDC_OPTTGT1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,63,20,63,10,WS_EX_TRANSPARENT
+    CONTROL         "&Window under cursor",IDC_OPTTGT2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,129,20,84,10,WS_EX_TRANSPARENT
+    CONTROL         "W&indows XP+: ""window ghosting"" feature workaround\n(require global hook)",IDC_CHKWGW,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,13,34,191,20
+    GROUPBOX        "Other",IDC_STCOTH,6,60,234,102
+    CONTROL         "T&erminate process only if it does not respond...",IDC_CHKTPTO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,76,162,10
+    EDITTEXT        IDC_EDTTO,34,88,25,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPNTO,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,59,88,11,10
+    LTEXT           "second(s)",IDC_STCTPTO,64,90,35,10
+    CONTROL         "A&utorun",IDC_CHKAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,108,40,10,WS_EX_TRANSPARENT
+    LTEXT           "Hotkey:",IDC_STCHK,14,127,30,10,NOT WS_GROUP,WS_EX_TRANSPARENT
+    CONTROL         "C&trl +",IDC_CHKCTRL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,47,127,28,10,WS_EX_TRANSPARENT
+    CONTROL         "A&lt +",IDC_CHKALT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,79,127,26,10,WS_EX_TRANSPARENT
+    CONTROL         "&Shift +",IDC_CHKSFT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,127,32,10,WS_EX_TRANSPARENT
+    CONTROL         "Wi&n +",IDC_CHKWIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,148,127,31,10,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDTKEY,186,125,45,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "&Reboot on hotkey",IDC_CHKROH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,143,73,10,WS_EX_TRANSPARENT
+END
+
+IDD_DLGPAGERULES DIALOGEX 0, 0, 246, 170
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&The following process:",IDC_STCPROCNAME,6,7,78,8
+    COMBOBOX        IDC_CBPROCNAME,6,19,126,84,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "...&program should:",IDC_STCRULE,138,7,57,8
+    COMBOBOX        IDC_CBRULES,137,19,102,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Refresh",IDC_BTNRFPROCNAMES,6,37,39,14
+    PUSHBUTTON      "&Add",IDC_BTNADDRULE,156,36,39,14
+    PUSHBUTTON      "&Modify",IDC_BTNMODRULE,156,54,39,14,WS_DISABLED
+    PUSHBUTTON      "R&emove",IDC_BTNREMRULE,199,36,40,14,WS_DISABLED
+    CONTROL         "",IDC_LVRULES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,74,234,90
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DLGABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_DLGOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DLGPAGEGENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DLGPAGERULES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,5,0,276
+ PRODUCTVERSION 1,5,0,276
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Boris Vorontsov"
+            VALUE "FileDescription", "EasyKill"
+            VALUE "FileVersion", "1.5.0.276"
+            VALUE "InternalName", "EasyKill"
+            VALUE "LegalCopyright", "© Boris Vorontsov, 2007 - 2017"
+            VALUE "OriginalFilename", "EasyKill.exe"
+            VALUE "ProductName", "EasyKill"
+            VALUE "ProductVersion", "1.5.0.276"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINICON            ICON                    "EK_ICON.ico"
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
